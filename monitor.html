@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>AI Baby Monitoring - Monitor Screen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+        <script src="monitor.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="btn header">
+            <h1>
+                <a href="upload.html"><img class="logo" src="logo.png"></a>
+                Monitoring
+            </h1>
+        </div>
+        <center>
+            <h4>
+                Kindly place the device out of reach of the baby. We'll recommend you to put the device somewhere in
+                the corner so we can get the whole view of the room which will help us to monitor your baby properly.
+            </h4>
+            <h3 class="btn" id="babyStatus"></h3>
+            <h3 class="btn" id="status"></h3>
+            <br>
+            <h3 class="btn start" onclick="start()">Start Monitoring</h3>
+        </center>
+    </body>
+</html>

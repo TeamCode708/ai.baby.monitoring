@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>AI Baby Monitoring - Upload Picture</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <script src="upload.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="btn header">
+            <h1>
+                <a href="home.html"><img class="logo" src="logo.png"></a>
+                Upload Picture
+            </h1>
+        </div>
+        <center>
+            <h4>Kindly click or upload the picture of the baby so we can identify if the baby is in the room and safe or not.</h4>
+            <div class="btn_holder">
+                <input type="file" id="file">
+                <label for="file" class="btn click_btn">
+                    <img class="icons" id="upload" src="upload.png">
+                    Upload Picture
+                </label>
+                <!--<br>
+                <h3>OR</h3>
+                <br>
+                <label class="btn upload_btn">Click Picture</label>-->
+                <br><br>
+                <button class="btn" id="saveImg_btn" onclick="monitor()">Save Image</button>
+            </div>
+        </center>
+    </body>
+</html>
